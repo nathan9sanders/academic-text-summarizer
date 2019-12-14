@@ -3,7 +3,7 @@ $(document).ready(function() {
     var url = "https://chemetoolbox.com/summarize";
 
     var article = {
-      "text": $("#text-input").val()
+      "text": $("#text-box").val()
     };
     console.log(article["text"]);
 
