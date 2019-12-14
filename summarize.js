@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $("#submit-text").click(function() {
-    var url = "https://processintegrator.herokuapp.com/"; // send the form data here.
+    var url = "https://chemetoolbox.com/summarize";
 
     var article = {
       "text": $("#text-input").val()
