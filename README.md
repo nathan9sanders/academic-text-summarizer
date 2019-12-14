@@ -13,6 +13,11 @@ You can use the [editor on GitHub](https://github.com/nathan9sanders/academic-te
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+<div id="text-box">
+  <input id="searchString" name="searchString" placeholder="Be a Better Developer, etc." type="text">
+  <input id="searchButton" name="googleSearchName" type="submit" value="Search">
+</div>
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
