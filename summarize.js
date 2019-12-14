@@ -8,7 +8,7 @@ $(document).ready(function() {
     };
     console.log(article["text"]);
 
-    article = JSON.stringify(process_data);
+    article = JSON.stringify(article);
 
     $.ajax({
       type: "POST",
