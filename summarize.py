@@ -58,6 +58,9 @@ clean_sentences = [s.lower() for s in clean_sentences]
 # get stopwords
 stop_words = stopwords.words('english')
 
+# remove stopwords from the sentences
+clean_sentences = [remove_stopwords(r.split()) for r in clean_sentences]
+
 sentence_vectors = []
 for i in clean_sentences:
   if len(i) != 0:
