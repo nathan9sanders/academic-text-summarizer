@@ -1,7 +1,7 @@
 ## Welcome to GitHub Pages
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="/summarize.js"></script>
+<script src="summarize.js"></script>
 
 You can use the [editor on GitHub](https://github.com/nathan9sanders/academic-text-summarizer/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
