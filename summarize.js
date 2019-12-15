@@ -13,7 +13,7 @@ $(document).ready(function() {
       url: url,
       data: article,
       success: function (data) {
-        $(#summary).html(data['summary']);
+        $("#summary").html(data['summary']);
       },
       error: function(error) {
         console.log(error);
