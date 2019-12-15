@@ -5,7 +5,6 @@ $(document).ready(function() {
     var article = {
       "text": $("#text-box").val()
     };
-    console.log(article["text"]);
 
     article = JSON.stringify(article);
 
@@ -14,7 +13,7 @@ $(document).ready(function() {
       url: url,
       data: article,
       success: function (data) {
-        console.log(data);
+        $(#summary).html(data['summary']);
       },
       error: function(error) {
         console.log(error);
