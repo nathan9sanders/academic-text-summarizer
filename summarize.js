@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $("#submit-text").click(function() {
-    var url = "http://127.0.0.1:5000/summarize";
+    var url = "https://chemetoolbox.com/summarize";
 
     var article = {
       "text": $("#text-box").val()
