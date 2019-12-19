@@ -17,7 +17,7 @@ THIS_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)))
 
 # function to remove stopwords
 def remove_stopwords(sen, stop_words):
-  sen_new = " ".join([i for i in sen if i not in stop_words])
+  sen_new = ''.join([i for i in sen if i not in stop_words])
   return sen_new
 
 # returns the top SN sentences in order
@@ -26,7 +26,7 @@ def get_summary(scores, sentences, SN):
   top_sentences = set([sentence for score, sentence in scored_sentences[:SN]])
   summarized_filename = ' - '.join([filename, "summary"])
   with open(summarized_filename, 'w') as f:
-    summary_text = ' '.join([sentence for sentence in sentences if sentence in top_sentences])
+    summary_text = '\n'.join([sentence for sentence in sentences if sentence in top_sentences])
     f.write(summary_text)
 
 def summarize(article_file):
@@ -49,7 +49,7 @@ def summarize(article_file):
   except (OSError, IOError, EOFError):
     with open("dict.pickle", "wb") as pickle_out:
       word_embeddings = {}
-      with open(os.path.join(THIS_FOLDER, 'lfs/glove.6B.100d.txt'), encoding='utf-8') as f:
+      with open(os.path.join(THIS_FOLDER, 'model/glove.6B.100d.txt'), encoding='utf-8') as f:
         for line in f:
           values = line.split()
           word = values[0]
