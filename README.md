@@ -12,12 +12,10 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
   <input id="submit-text" type="submit" value="Summarize">
 </div>
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+### Summary
 ```markdown
-Syntax highlighted code block
+
+<div id="summary"><div>
 
 # Header 1
 ## Header 2
